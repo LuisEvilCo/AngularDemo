@@ -1,0 +1,17 @@
+{
+  "name": "AngularDemo",
+  "homepage": "https://github.com/LuisEvilCo/AngularDemo",
+  "authors": [
+    "Luis T Muñozcano <ltm150895@gmail.com>"
+  ],
+  "description": "demo",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

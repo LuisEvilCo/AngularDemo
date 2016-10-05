@@ -1,16 +1,16 @@
 (function(){
-    var app = angular.module('app',[]);
+   var app = angular.module("app", ["xeditable"]);
 
-    app.controller('PageController', function(){
-        this.products = items;
+
+    app.run(function(editableOptions) {
+        editableOptions.theme = 'bs3'; // bootstrap3 theme. Can be also 'bs2', 'default'
     });
 
-    var items = [{
-        name : 'Daniel Perez',
-        description : 'description number 1'
-    },{
-        name : 'item2',
-        description : 'description number 2' 
-    }]
+app.controller('Ctrl', function($scope) {
+  $scope.user = {
+    name: 'not so awesome user'
+    console.log($scope.user);
+  };  
+});
 
 })();
